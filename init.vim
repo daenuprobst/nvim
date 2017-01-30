@@ -14,6 +14,8 @@ Plug 'mhinz/vim-startify'
 Plug 'notpratheek/vim-luna'
 " Get patched fonts: https://github.com/ryanoasis/nerd-fonts
 Plug 'ryanoasis/vim-devicons'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 " Plug 'valloric/youcompleteme', { 'do': './install.py' }
 call plug#end()
 set termguicolors
