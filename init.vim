@@ -4,9 +4,12 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries'}
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kien/ctrlp.vim'
 " Plug 'valloric/youcompleteme', { 'do': './install.py' }
 call plug#end()
 set termguicolors
@@ -36,5 +39,14 @@ set showmatch
 set incsearch
 set hlsearch
 
+" Map leader
+let mapleader=","
+
+" Airline
 let g:airline_theme='badwolf'
 let g:airline_powerline_fonts=1
+
+" Comments
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
