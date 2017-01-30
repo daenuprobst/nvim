@@ -10,6 +10,9 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
+Plug 'mhinz/vim-startify'
+" Get patched fonts: https://github.com/ryanoasis/nerd-fonts
+Plug 'ryanoasis/vim-devicons'
 " Plug 'valloric/youcompleteme', { 'do': './install.py' }
 call plug#end()
 set termguicolors
@@ -50,3 +53,5 @@ let g:airline_powerline_fonts=1
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
+" Clipboard
+set clipboard+=unnamedplus
