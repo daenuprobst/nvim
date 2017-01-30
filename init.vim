@@ -11,12 +11,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'mhinz/vim-startify'
+Plug 'notpratheek/vim-luna'
 " Get patched fonts: https://github.com/ryanoasis/nerd-fonts
 Plug 'ryanoasis/vim-devicons'
 " Plug 'valloric/youcompleteme', { 'do': './install.py' }
 call plug#end()
 set termguicolors
-colorscheme badwolf
+colorscheme luna 
 syntax enable
 set expandtab
 set tabstop=4
@@ -46,7 +47,7 @@ set hlsearch
 let mapleader=","
 
 " Airline
-let g:airline_theme='badwolf'
+let g:airline_theme='luna'
 let g:airline_powerline_fonts=1
 
 " Comments
