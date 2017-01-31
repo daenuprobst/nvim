@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'mhinz/vim-startify'
 Plug 'notpratheek/vim-luna'
+Plug 'beautify-web/js-beautify'
 " Get patched fonts: https://github.com/ryanoasis/nerd-fonts
 Plug 'ryanoasis/vim-devicons'
 Plug 'othree/html5.vim'
