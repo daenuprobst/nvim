@@ -12,11 +12,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'mhinz/vim-startify'
 Plug 'notpratheek/vim-luna'
-Plug 'beautify-web/js-beautify'
+Plug 'maksimr/vim-jsbeautify'
 " Get patched fonts: https://github.com/ryanoasis/nerd-fonts
 Plug 'ryanoasis/vim-devicons'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'heavenshell/vim-jsdoc'
 " Plug 'valloric/youcompleteme', { 'do': './install.py' }
 call plug#end()
 set termguicolors
@@ -59,3 +61,27 @@ let g:NERDCompactSexyComs = 1
 
 " Clipboard
 set clipboard+=unnamedplus
+
+" JSDoc
+let g:jsdoc_allow_input_prompt=1
+let g:jsdoc_input_description=1
+let g:jsdoc_additional_descriptions=0
+let g:jsdoc_access_descriptions=0
+let g:jsdoc_enable_es6=1
+
+" Web beautifier
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
+autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+let g:config_Beautifier = {}
+let g:config_Beautifier['js'] = {}
+let g:config_Beautifier['js'].indent_size = '4'
+let g:config_Beautifier['js'].indent_char = ' '
+let g:config_Beautifier['js'].space_before_conditional = 'true'
+let g:config_Beautifier['js'].brace_style = 'collapse'
+let g:config_Beautifier['js'].end_width_newline = 'true'
+let g:config_Beautifier['js'].jslint_happy = 'true'
+let g:config_Beautifier['js'].formaformat_on_save = 'true'
